@@ -28,12 +28,18 @@
 <!-- custom javascript -->
 <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
 
+
+<script src="https://www.paypal.com/sdk/js?client-id=ARYIeSGJV4i4UzwJ_rY0cqEenxP8w-p2OrVKLU0aWf2O_OjEIww93gi7Pdrq8e0nAzNYnmIiP6AE9veT&currency=USD"></script>
+
 <script type="text/javascript">
 /// some script
 
 // jquery ready start
 $(document).ready(function() {
 	// jQuery code
+  setTimeout(function() {
+      $('#message').fadeOut('slow')
+  }, 4000)
 
 });
 // jquery end
