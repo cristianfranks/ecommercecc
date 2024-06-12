@@ -2,7 +2,10 @@
 
 {% block content %}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 00c1235 (Proyecto Completo)
 <!-- ========================= SECTION CONTENT ========================= -->
 <section class="section-conten padding-y bg">
     {% include 'includes/alerts.html' %}
@@ -11,7 +14,10 @@
         <div class="row">
         {% include 'includes/dashboard_sidebar.html' %}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 00c1235 (Proyecto Completo)
         <main class="col-md-9">
             <article class="card">
             <header class="card-header">
@@ -19,7 +25,10 @@
             </header>
             <div class="card-body">
                 <div class="row">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 00c1235 (Proyecto Completo)
                     <div class="col-md-12">
                           <table class="table table-hover">
                               <thead>
@@ -29,6 +38,10 @@
                                   <th scope="col">Telefono</th>
                                   <th scope="col">Total Orden</th>
                                   <th scope="col">Fecha</th>
+<<<<<<< HEAD
+=======
+                                  <th scope="col">Acciones</th> <!-- Nueva columna para acciones -->
+>>>>>>> 00c1235 (Proyecto Completo)
                                 </tr>
                               </thead>
                               <tbody>
@@ -39,10 +52,17 @@
                                         <td>{{order.phone}}</td>
                                         <td>${{order.order_total}}</td>
                                         <td>{{order.created_at}}</td>
+<<<<<<< HEAD
+=======
+                                        <td>
+                                            <a href="{% url 'order_detail' order.id %}" class="btn btn-primary btn-sm">Ver Detalles</a>
+                                        </td> <!-- Enlace a la vista de detalles -->
+>>>>>>> 00c1235 (Proyecto Completo)
                                       </tr>
                                   {% endfor %}
                               </tbody>
                           </table>
+<<<<<<< HEAD
 
 
                     </div>
@@ -54,12 +74,20 @@
                 </div> <!-- row.// -->
             </div> <!-- card-body .// -->
 
+=======
+                    </div>
+                </div> <!-- row.// -->
+            </div> <!-- card-body .// -->
+>>>>>>> 00c1235 (Proyecto Completo)
             </article> <!-- order-group.// -->
         </main>
     </div> <!-- row.// -->
     </div>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 00c1235 (Proyecto Completo)
     </section>
     <!-- ========================= SECTION CONTENT END// ========================= -->
 

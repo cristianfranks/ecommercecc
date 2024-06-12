@@ -48,7 +48,11 @@
                                         <li><strong>Orden</strong> # {{ order_number }}</li>
                                         <li><strong>Transaccion</strong> {{ transID }}</li>
                                         <li><strong>Fecha de Orden:</strong> {{ order.created_at }}</li>
+<<<<<<< HEAD
                                         <li><strong>Status:</strong> {{ payment.status }}</li>
+=======
+                                        <li><strong>Estado:</strong> {{ payment.status }}</li>
+>>>>>>> 00c1235 (Proyecto Completo)
                                     </ul>
                                 </div>
                             </div>
@@ -59,7 +63,11 @@
                                         <thead>
                                             <tr>
                                                 <th class="per70 text-center">Descripcion</th>
+<<<<<<< HEAD
                                                 <th class="per5 text-center">Qty</th>
+=======
+                                                <th class="per5 text-center">Cantidad</th>
+>>>>>>> 00c1235 (Proyecto Completo)
                                                 <th class="per25 text-center">Total</th>
                                             </tr>
                                         </thead>
@@ -79,23 +87,39 @@
                                                     </p>
                                                 </td>
                                                 <td class="text-center">{{ item.quantity }}</td>
+<<<<<<< HEAD
                                                 <td class="text-center">$ {{item.product_price}} USD</td>
+=======
+                                                <td class="text-center">S/. {{item.product_price}} </td>
+>>>>>>> 00c1235 (Proyecto Completo)
                                             </tr>
                                           {% endfor %}
                                         </tbody>
                                         <tfoot>
                                             <tr>
                                                 <th colspan="2" class="text-right">Sub Total:</th>
+<<<<<<< HEAD
                                                 <th class="text-center">$  {{subtotal}} USD</th>
                                             </tr>
                                             <tr>
                                                 <th colspan="2" class="text-right">Tax:</th>
                                                 <th class="text-center">$ {{ order.tax }} USD</th>
+=======
+                                                <th class="text-center">S/. {{subtotal}} </th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2" class="text-right">IGV:</th>
+                                                <th class="text-center">S/.{{ order.tax }} </th>
+>>>>>>> 00c1235 (Proyecto Completo)
                                             </tr>
 
                                             <tr>
                                                 <th colspan="2" class="text-right">Grand Total:</th>
+<<<<<<< HEAD
                                                 <th class="text-center">$ {{ order.order_total }} USD</th>
+=======
+                                                <th class="text-center">S/.{{ order.order_total }} </th>
+>>>>>>> 00c1235 (Proyecto Completo)
                                             </tr>
                                         </tfoot>
                                     </table>

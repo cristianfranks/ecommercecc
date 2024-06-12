@@ -1,7 +1,11 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import RegistrationForm, UserProfileForm, UserForm
 from .models import Account, UserProfile
+<<<<<<< HEAD
 from orders.models import Order
+=======
+from orders.models import Order, Payment, OrderProduct, Variation
+>>>>>>> 00c1235 (Proyecto Completo)
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 from django.contrib.sites.shortcuts import get_current_site
@@ -11,6 +15,10 @@ from django.contrib.auth.tokens import default_token_generator
 from django.utils.encoding import force_bytes
 from django.core.mail import EmailMessage
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 00c1235 (Proyecto Completo)
 from carts.views import _cart_id
 from carts.models import Cart, CartItem
 import requests
@@ -244,6 +252,19 @@ def my_orders(request):
     }
     return render(request, 'accounts/my_orders.html', context)
 
+<<<<<<< HEAD
+=======
+def order_detail(request, order_id):
+    order = get_object_or_404(Order, id=order_id)
+    order_products = OrderProduct.objects.filter(order_id=order.id)
+    for order_product in order_products:
+        order_product.total = order_product.quantity * order_product.product_price
+    context = {
+        'order': order,
+        'order_products': order_products,
+    }
+    return render(request, 'accounts/order_detail.html', context)
+>>>>>>> 00c1235 (Proyecto Completo)
 
 def edit_profile(request):
     userprofile = get_object_or_404(UserProfile, user=request.user)

@@ -26,7 +26,11 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool, default=True)
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = []
+=======
+ALLOWED_HOSTS = ['*']
+>>>>>>> 00c1235 (Proyecto Completo)
 
 
 # Application definition
@@ -43,7 +47,11 @@ INSTALLED_APPS = [
     'store',
     'carts',
     'orders',
+<<<<<<< HEAD
 
+=======
+    'customadmin'
+>>>>>>> 00c1235 (Proyecto Completo)
 ]
 
 MIDDLEWARE = [
@@ -121,7 +129,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
+<<<<<<< HEAD
 TIME_ZONE = 'UTC'
+=======
+TIME_ZONE = 'America/Lima'
+>>>>>>> 00c1235 (Proyecto Completo)
 
 USE_I18N = True
 

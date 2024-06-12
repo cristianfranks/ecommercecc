@@ -93,6 +93,12 @@ def place_order(request, total = 0, quantity=0):
     tax = (18 * total)/100
     grand_total = total + tax
 
+<<<<<<< HEAD
+=======
+    # Redondear grand_total a dos decimales
+    grand_total = round(grand_total, 2)
+
+>>>>>>> 00c1235 (Proyecto Completo)
     if request.method == 'POST':
         form = OrderForm(request.POST)
 

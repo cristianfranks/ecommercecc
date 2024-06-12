@@ -28,4 +28,8 @@ urlpatterns = [
     path('cart/', include('carts.urls')),
     path ('accounts/', include('accounts.urls')),
     path ('orders/', include('orders.urls')),
+<<<<<<< HEAD
+=======
+    path ('admin/', include('customadmin.urls')),
+>>>>>>> 00c1235 (Proyecto Completo)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
